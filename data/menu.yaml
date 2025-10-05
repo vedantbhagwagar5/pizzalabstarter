@@ -1,0 +1,20 @@
+shop:
+  name: "Blue Devil Pizza"
+  tax_rate: 0.055  # 5.5% (tweak this for the merge-conflict exercise)
+sizes:
+  small: 8.00
+  medium: 11.00
+  large: 14.00
+toppings:
+  pepperoni: 1.50
+  mushrooms: 1.25
+  onions: 1.00
+  green_peppers: 1.00
+  extra_cheese: 1.75
+promos:
+  LARGE2:            # Buy two large pizzas → 10% off the large subtotal
+    type: "two_large_pct_off"
+    percent: 10
+  STUDENT10:         # Flat 10% off any order subtotal (before tax)
+    type: "percent_off_order"
+    percent: 10
